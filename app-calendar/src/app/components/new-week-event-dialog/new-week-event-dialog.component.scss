@@ -1,0 +1,27 @@
+:host{
+    font-size:1.20em;
+   
+    margin:0;
+    padding:0;
+    color:lightcoral;
+}
+
+.week{
+    margin-top: 15px;
+    display: grid;
+   grid-template-columns:33% 33% 33%;
+   div{
+       margin-right: 5px;
+   }
+   
+}
+
+mat-form-field{
+    width:300px !important
+}
+
+.buttons{
+    display:flex;
+    justify-content: space-between;
+}
+

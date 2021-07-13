@@ -1,0 +1,61 @@
+/* You can add global styles to this file, and also import other style files */
+*{
+    font-family: 'Quicksand', sans-serif;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.timepicker-overlay {
+    z-index: 10000000 !important;
+}
+
+.timepicker-backdrop-overlay {
+    z-index: 10000000 !important;
+}
+.timepicker {
+
+    .timepicker__header {
+      background-color: lightcoral !important;
+    }
+  
+    .clock-face__clock-hand {
+      background-color: lightcoral !important;
+  
+      &::after {
+        background-color: lightcoral !important;
+      }
+  
+      &::before {
+        border-color: lightcoral !important;
+      }
+    }
+  
+    .clock-face__number {
+      > span.active {
+        background-color:lightcoral !important;
+      }
+    }
+  
+    button:not(.timepicker-dial__item) {
+      color: lightcoral !important;
+    }
+  }
+
+::-webkit-scrollbar {
+    width: 3px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: rgb(158, 157, 157); 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #f1f1f1; 
+   
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #888; 
+  }

@@ -1,0 +1,24 @@
+h4{
+    display: inline-block;
+}
+
+fa-icon{
+    color:red;
+    padding-left: 10px;
+}
+
+fa-icon:hover{
+    cursor:pointer;
+    font-size: large;
+}
+
+:host{
+    color:lightcoral
+}
+
+.repeating{
+    color:blue
+}
+h1{
+    color:black
+}

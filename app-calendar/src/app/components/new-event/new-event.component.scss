@@ -1,0 +1,32 @@
+:host{
+    position: absolute;
+    top:15px;
+    right:20px;
+    .mat-success {
+        background-color: lightcoral;
+        color: #fff;
+    }
+}
+
+.createEvent{
+    background-color: purple;
+}
+
+.mainButton{
+    margin-right: 70px;
+}
+
+.createButtons{
+    div{
+        display:flex;
+    }
+   
+    width: 150px;
+    font-size: small;
+    h5{
+        margin-top: 10px;
+        margin-left: 5px;
+        color:purple;
+    }
+    
+}

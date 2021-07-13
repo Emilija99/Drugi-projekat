@@ -1,0 +1,5 @@
+<h1 mat-dialog-title> {{title}}</h1>
+<div *ngFor='let ev of events'>
+    <h4 [class]='ev.isRepeating?className[0]:className[1]'>{{('0'+ev.date.getHours()).slice(-2)}}:{{('0'+ev.date.getMinutes()).slice(-2)}} - {{ev.name}} </h4>
+    <fa-icon (click)='deleteEvent(ev)' [icon]='faTrash'></fa-icon>
+</div>

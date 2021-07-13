@@ -1,0 +1,32 @@
+
+<div class='calendar'>
+    <div class="calendarHeader">
+        <fa-icon [icon]="faAngleLeft" (click)='changeCurrentDate(-1)'></fa-icon>
+        <div>{{months[currentMonth]}} {{currentYear}}</div>
+        <fa-icon [icon]="faAngleRight" (click)='changeCurrentDate(+1)'></fa-icon>
+    </div>
+    <div class='weekDays'>
+        <div>Sun</div>
+        <div>Mon</div>
+        <div>Tue</div>
+        <div>Wed</div>
+        <div>Thu</div>
+        <div>Fri</div>
+        <div>Sat</div>
+    </div>
+    <div *ngIf='monthEvents | async' class='calendarBody'>
+        <div  class='prevDays' *ngFor='let d of prevDays; let i=index'>{{d}}
+           
+        </div>
+        <div *ngFor='let d of days' [class]='returnDayClassName(d)'>{{d}}<fa-icon [icon]='faPlus' (click)='openCreateEventDialog(currentYear,currentMonth,d)'></fa-icon>
+            <div >
+                <app-day *ngIf='monthEvents | async'[events]='getEventsForDate(monthEvents | async,d)'></app-day>
+            </div>
+        </div>
+        <div class='nextDays' *ngFor='let d of nextDays' >{{d}}
+           
+        </div>
+        
+        
+    </div>
+</div>

@@ -1,0 +1,11 @@
+<div class='kont'>
+<h1>Upcoming events (next 10 days)</h1>
+<div *ngFor="let key of keys">
+<app-day-details
+  *ngIf='returnEventsForKey(upcomingDays | async, key)'
+  [events]="returnEventsForKey(upcomingDays | async, key)"
+  [title]='key'
+></app-day-details>
+<mat-divider *ngIf='returnEventsForKey(upcomingDays | async, key)'></mat-divider>
+</div>
+</div>

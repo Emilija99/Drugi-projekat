@@ -1,0 +1,92 @@
+
+:host{
+    display: flex;
+    justify-content: center;
+}
+.calendar{
+    box-sizing: border-box;
+    width: 75%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin-top: 15px;
+   
+
+}
+
+.calendarHeader{
+    box-sizing: border-box;
+    width:100%;
+    background-color: #9400d3;
+    display:flex;
+    height:4rem;
+    align-items: center;
+    justify-content: space-between;
+    padding:0 2rem;
+    color:white;
+
+    div,fa-icon{
+       
+        font-size:1.5em;
+        
+    }
+    
+    fa-icon:hover{
+        cursor:pointer;
+        color:grey;
+    }
+    
+}
+
+.weekDays, .calendarBody{
+    
+    width:100%;
+    display: grid;
+    grid-template-columns:14.28% 14.28% 14.28% 14.28% 14.28% 14.28% 14.28%;
+    box-sizing: border-box;
+    text-align: center;
+    padding:  1.5em 0;
+}
+
+.calendarBody{
+    background-color: lightcoral;
+    div{
+      
+        color:whitesmoke;
+        height: 80px;
+       overflow: auto;
+       margin:5px;
+       
+       font-size:0.9em;
+     
+       fa-icon{
+           font-size: 9px;
+           position: relative;
+           left:15px;
+       }
+       fa-icon:hover{
+           cursor:pointer;
+           font-size: 12px;
+       }
+       div{
+           height:50%;
+           overflow:initial;
+       }
+    }
+}
+
+.prevDays, .nextDays{
+    opacity:0.5;
+    
+}
+
+.today{
+   
+    
+    background-color: #98B4D4;
+    box-shadow: #7ea6d4 0px 1px 3px 0px, #7ea6d4 0px 0px 0px 1px;
+}
+
+.otherDay{
+    background-color: lightcoral;
+    border:none;
+}
+
